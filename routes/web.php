@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CoffeeController;
+use App\Models\CoffeeSale;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +22,14 @@ Route::get('/', function () {
 
 Route::redirect('/dashboard', '/sales');
 
+#Router for load sales view
 Route::get('/sales', function () {
-    return view('coffee_sales');
+    $salesData=CoffeeSale::all();// Records from Coffeesales_tables
+    return view('coffee_sales',['salesData'=>$salesData]);
 })->middleware(['auth'])->name('coffee.sales');
+
+#Route for store the sale
+Route::post('/sales',[CoffeeController::class,'store'])->name('coffee.sales');
 
 Route::get('/shipping-partners', function () {
     return view('shipping_partners');
