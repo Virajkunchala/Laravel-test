@@ -15,6 +15,9 @@
                     <x-nav-link :href="route('coffee.sales')" :active="request()->routeIs('coffee.sales')">
                         {{ __('☕️ Sales') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('products')" :active="request()->routeIs('coffee.sales')">
+                        {{ __('☕️ Products') }}
+                    </x-nav-link>
 {{--                    <x-nav-link :href="route('shipping.partners')" :active="request()->routeIs('shipping.partners')">--}}
 {{--                        {{ __('Shipping Partners 🚚') }}--}}
 {{--                    </x-nav-link>--}}

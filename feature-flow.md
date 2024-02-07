@@ -31,3 +31,22 @@ The selling price feature allows generate the sale at a Coffee outlet by calcula
 2.**Generated Factory File to use with testcase**
 --Filename:`database\factories\UserFactory.php`
 
+##Feature-2
+1.Product Details implemented dynamically 
+--file:'app\Http\Controllers\ProductController.php'
+Model:
+--file:'app\Models\Product.php'
+
+2.Cofee sales page modification
+#fetched product name in the dropdown from db 
+#calculated selling price based on profit margin and shipping cost
+#used ajax and javascript in view to load the selling price simultenously
+#stored product_id from product table into sales table to create relationship(joins)
+#implemented joins to display product name by using inbuilt ORM features a
+
+
+3:Testcase Product Test case
+
+file:'tests\Feature\ProductTest.php'
+#implemented test cases for Product details view and post methods created factory file
+
