@@ -17,3 +17,11 @@ The selling price feature allows generate the sale at a Coffee outlet by calcula
     - Filename: `app/Models/Coffeesale.php`
 6. **Migrations** : Created coffee_sales table to store sales data with coressponding columns
 
+
+##Feature-1 Test Cases 
+#implemented Feature Test case option to test Sales 
+1. **Generated Test case File**:
+--Filename:`tests\Feature\CoffeeSaleTest.php`
+2.**Generated Factory File to use with testcase**
+--Filename:`database\factories\UserFactory.php`
+
