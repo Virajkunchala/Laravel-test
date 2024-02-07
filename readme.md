@@ -2,6 +2,8 @@
 
 Documentation should be kept in the `docs` folder
 
+Please read my approch in feature-flow.md 
+
 ## TABLE OF CONTENTS
 
 | Title                  | File                                 |
