@@ -50,3 +50,4 @@ Model:
 file:'tests\Feature\ProductTest.php'
 #implemented test cases for Product details view and post methods created factory file
 
+#implemented db seeders for default product table data
