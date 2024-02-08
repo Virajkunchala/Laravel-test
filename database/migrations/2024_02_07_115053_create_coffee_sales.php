@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('coffee_sales', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('product_id'); // Add product_id column
+            $table->foreign('product_id')->references('id')->on('products'); // foreign key constraint
             $table->integer('quantity');
             $table->decimal('unit_price', 8, 2);
             $table->decimal('selling_price', 8, 2);
             $table->timestamps();
         });
+
+       
     }
 
     /**
